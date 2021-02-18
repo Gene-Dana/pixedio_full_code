@@ -1,0 +1,803 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/painting/edge_insets.dart', 'packages/flutter/src/rendering/flex.dart', 'packages/website_video_animation/components/bordered_text.dart', 'packages/flutter_layout_grid/src/rendering/placement.dart', 'packages/flutter_layout_grid/src/rendering/track_size.dart', 'packages/flutter/src/painting/box_fit.dart'], (function load__packages__website_video_animation__pages__home_page__sections__fourth_section_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__painting__edge_insets$46dart, packages__flutter__src__rendering__flex$46dart, packages__website_video_animation__components__bordered_text$46dart, packages__flutter_layout_grid__src__rendering__placement$46dart, packages__flutter_layout_grid__src__rendering__track_size$46dart, packages__flutter__src__painting__box_fit$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const _interceptors = dart_sdk._interceptors;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const image = packages__flutter__src__widgets__widget_span$46dart.src__widgets__image;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const flex = packages__flutter__src__rendering__flex$46dart.src__rendering__flex;
+  const bordered_text = packages__website_video_animation__components__bordered_text$46dart.components__bordered_text;
+  const layout_grid = packages__flutter_layout_grid__src__rendering__placement$46dart.src__widgets__layout_grid;
+  const helpers = packages__flutter_layout_grid__src__rendering__placement$46dart.src__helpers;
+  const placement = packages__flutter_layout_grid__src__rendering__placement$46dart.src__widgets__placement;
+  const track_size = packages__flutter_layout_grid__src__rendering__track_size$46dart.src__rendering__track_size;
+  const box_fit = packages__flutter__src__painting__box_fit$46dart.src__painting__box_fit;
+  var fourth_section = Object.create(dart.library);
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    _LocationL: () => (T._LocationL = dart.constFn(dart.legacy(widget_inspector._Location)))(),
+    WidgetL: () => (T.WidgetL = dart.constFn(dart.legacy(framework.Widget)))(),
+    JSArrayOfWidgetL: () => (T.JSArrayOfWidgetL = dart.constFn(_interceptors.JSArray$(T.WidgetL())))(),
+    TrackSizeL: () => (T.TrackSizeL = dart.constFn(dart.legacy(track_size.TrackSize)))(),
+    JSArrayOfTrackSizeL: () => (T.JSArrayOfTrackSizeL = dart.constFn(_interceptors.JSArray$(T.TrackSizeL())))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: edge_insets.EdgeInsets.prototype,
+        [EdgeInsets_bottom]: 0,
+        [EdgeInsets_right]: 100,
+        [EdgeInsets_top]: 0,
+        [EdgeInsets_left]: 100
+      });
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "text",
+        [_Location_column]: 24,
+        [_Location_line]: 26,
+        [_Location_file]: null
+      });
+    },
+    get C2() {
+      return C[2] = dart.constList([C[3] || CT.C3], T._LocationL());
+    },
+    get C1() {
+      return C[1] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[2] || CT.C2,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 26,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/sections/fourth_section.dart"
+      });
+    },
+    get C5() {
+      return C[5] = dart.constList([], T._LocationL());
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[5] || CT.C5,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 27,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/sections/fourth_section.dart"
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "mainAxisAlignment",
+        [_Location_column]: 9,
+        [_Location_line]: 24,
+        [_Location_file]: null
+      });
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 9,
+        [_Location_line]: 25,
+        [_Location_file]: null
+      });
+    },
+    get C7() {
+      return C[7] = dart.constList([C[8] || CT.C8, C[9] || CT.C9], T._LocationL());
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[7] || CT.C7,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 23,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/sections/fourth_section.dart"
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 7,
+        [_Location_line]: 22,
+        [_Location_file]: null
+      });
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 23,
+        [_Location_file]: null
+      });
+    },
+    get C11() {
+      return C[11] = dart.constList([C[12] || CT.C12, C[13] || CT.C13], T._LocationL());
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[11] || CT.C11,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 21,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/sections/fourth_section.dart"
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "imageName",
+        [_Location_column]: 15,
+        [_Location_line]: 55,
+        [_Location_file]: null
+      });
+    },
+    get C15() {
+      return C[15] = dart.constList([C[16] || CT.C16], T._LocationL());
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[15] || CT.C15,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 54,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/sections/fourth_section.dart"
+      });
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "areaName",
+        [_Location_column]: 13,
+        [_Location_line]: 53,
+        [_Location_file]: null
+      });
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 13,
+        [_Location_line]: 54,
+        [_Location_file]: null
+      });
+    },
+    get C18() {
+      return C[18] = dart.constList([C[19] || CT.C19, C[20] || CT.C20], T._LocationL());
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[18] || CT.C18,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 52,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/sections/fourth_section.dart"
+      });
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "imageName",
+        [_Location_column]: 15,
+        [_Location_line]: 61,
+        [_Location_file]: null
+      });
+    },
+    get C22() {
+      return C[22] = dart.constList([C[23] || CT.C23], T._LocationL());
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[22] || CT.C22,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 60,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/sections/fourth_section.dart"
+      });
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "areaName",
+        [_Location_column]: 13,
+        [_Location_line]: 59,
+        [_Location_file]: null
+      });
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 13,
+        [_Location_line]: 60,
+        [_Location_file]: null
+      });
+    },
+    get C25() {
+      return C[25] = dart.constList([C[26] || CT.C26, C[27] || CT.C27], T._LocationL());
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[25] || CT.C25,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 58,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/sections/fourth_section.dart"
+      });
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "imageName",
+        [_Location_column]: 15,
+        [_Location_line]: 67,
+        [_Location_file]: null
+      });
+    },
+    get C29() {
+      return C[29] = dart.constList([C[30] || CT.C30], T._LocationL());
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[29] || CT.C29,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 66,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/sections/fourth_section.dart"
+      });
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "areaName",
+        [_Location_column]: 13,
+        [_Location_line]: 65,
+        [_Location_file]: null
+      });
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 13,
+        [_Location_line]: 66,
+        [_Location_file]: null
+      });
+    },
+    get C32() {
+      return C[32] = dart.constList([C[33] || CT.C33, C[34] || CT.C34], T._LocationL());
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[32] || CT.C32,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 64,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/sections/fourth_section.dart"
+      });
+    },
+    get C37() {
+      return C[37] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "imageName",
+        [_Location_column]: 15,
+        [_Location_line]: 73,
+        [_Location_file]: null
+      });
+    },
+    get C36() {
+      return C[36] = dart.constList([C[37] || CT.C37], T._LocationL());
+    },
+    get C35() {
+      return C[35] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[36] || CT.C36,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 72,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/sections/fourth_section.dart"
+      });
+    },
+    get C40() {
+      return C[40] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "areaName",
+        [_Location_column]: 13,
+        [_Location_line]: 71,
+        [_Location_file]: null
+      });
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 13,
+        [_Location_line]: 72,
+        [_Location_file]: null
+      });
+    },
+    get C39() {
+      return C[39] = dart.constList([C[40] || CT.C40, C[41] || CT.C41], T._LocationL());
+    },
+    get C38() {
+      return C[38] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[39] || CT.C39,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 70,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/sections/fourth_section.dart"
+      });
+    },
+    get C44() {
+      return C[44] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "imageName",
+        [_Location_column]: 15,
+        [_Location_line]: 79,
+        [_Location_file]: null
+      });
+    },
+    get C43() {
+      return C[43] = dart.constList([C[44] || CT.C44], T._LocationL());
+    },
+    get C42() {
+      return C[42] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[43] || CT.C43,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 78,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/sections/fourth_section.dart"
+      });
+    },
+    get C47() {
+      return C[47] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "areaName",
+        [_Location_column]: 13,
+        [_Location_line]: 77,
+        [_Location_file]: null
+      });
+    },
+    get C48() {
+      return C[48] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 13,
+        [_Location_line]: 78,
+        [_Location_file]: null
+      });
+    },
+    get C46() {
+      return C[46] = dart.constList([C[47] || CT.C47, C[48] || CT.C48], T._LocationL());
+    },
+    get C45() {
+      return C[45] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[46] || CT.C46,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 76,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/sections/fourth_section.dart"
+      });
+    },
+    get C51() {
+      return C[51] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "imageName",
+        [_Location_column]: 15,
+        [_Location_line]: 85,
+        [_Location_file]: null
+      });
+    },
+    get C50() {
+      return C[50] = dart.constList([C[51] || CT.C51], T._LocationL());
+    },
+    get C49() {
+      return C[49] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[50] || CT.C50,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 84,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/sections/fourth_section.dart"
+      });
+    },
+    get C54() {
+      return C[54] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "areaName",
+        [_Location_column]: 13,
+        [_Location_line]: 83,
+        [_Location_file]: null
+      });
+    },
+    get C55() {
+      return C[55] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 13,
+        [_Location_line]: 84,
+        [_Location_file]: null
+      });
+    },
+    get C53() {
+      return C[53] = dart.constList([C[54] || CT.C54, C[55] || CT.C55], T._LocationL());
+    },
+    get C52() {
+      return C[52] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[53] || CT.C53,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 82,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/sections/fourth_section.dart"
+      });
+    },
+    get C58() {
+      return C[58] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "rowGap",
+        [_Location_column]: 9,
+        [_Location_line]: 43,
+        [_Location_file]: null
+      });
+    },
+    get C59() {
+      return C[59] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "columnGap",
+        [_Location_column]: 9,
+        [_Location_line]: 44,
+        [_Location_file]: null
+      });
+    },
+    get C60() {
+      return C[60] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "areas",
+        [_Location_column]: 9,
+        [_Location_line]: 45,
+        [_Location_file]: null
+      });
+    },
+    get C61() {
+      return C[61] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "columnSizes",
+        [_Location_column]: 9,
+        [_Location_line]: 49,
+        [_Location_file]: null
+      });
+    },
+    get C62() {
+      return C[62] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "rowSizes",
+        [_Location_column]: 9,
+        [_Location_line]: 50,
+        [_Location_file]: null
+      });
+    },
+    get C63() {
+      return C[63] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 9,
+        [_Location_line]: 51,
+        [_Location_file]: null
+      });
+    },
+    get C57() {
+      return C[57] = dart.constList([C[58] || CT.C58, C[59] || CT.C59, C[60] || CT.C60, C[61] || CT.C61, C[62] || CT.C62, C[63] || CT.C63], T._LocationL());
+    },
+    get C56() {
+      return C[56] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[57] || CT.C57,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 42,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/sections/fourth_section.dart"
+      });
+    },
+    get C66() {
+      return C[66] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 7,
+        [_Location_line]: 40,
+        [_Location_file]: null
+      });
+    },
+    get C67() {
+      return C[67] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 7,
+        [_Location_line]: 41,
+        [_Location_file]: null
+      });
+    },
+    get C68() {
+      return C[68] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 42,
+        [_Location_file]: null
+      });
+    },
+    get C65() {
+      return C[65] = dart.constList([C[66] || CT.C66, C[67] || CT.C67, C[68] || CT.C68], T._LocationL());
+    },
+    get C64() {
+      return C[64] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[65] || CT.C65,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 39,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/sections/fourth_section.dart"
+      });
+    },
+    get C69() {
+      return C[69] = dart.const({
+        __proto__: edge_insets.EdgeInsets.prototype,
+        [EdgeInsets_bottom]: 25,
+        [EdgeInsets_right]: 25,
+        [EdgeInsets_top]: 25,
+        [EdgeInsets_left]: 25
+      });
+    },
+    get C72() {
+      return C[72] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "name",
+        [_Location_column]: 9,
+        [_Location_line]: 104,
+        [_Location_file]: null
+      });
+    },
+    get C73() {
+      return C[73] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "fit",
+        [_Location_column]: 9,
+        [_Location_line]: 105,
+        [_Location_file]: null
+      });
+    },
+    get C74() {
+      return C[74] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 9,
+        [_Location_line]: 106,
+        [_Location_file]: null
+      });
+    },
+    get C71() {
+      return C[71] = dart.constList([C[72] || CT.C72, C[73] || CT.C73, C[74] || CT.C74], T._LocationL());
+    },
+    get C70() {
+      return C[70] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[71] || CT.C71,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 103,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/sections/fourth_section.dart"
+      });
+    },
+    get C77() {
+      return C[77] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 7,
+        [_Location_line]: 102,
+        [_Location_file]: null
+      });
+    },
+    get C78() {
+      return C[78] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 103,
+        [_Location_file]: null
+      });
+    },
+    get C76() {
+      return C[76] = dart.constList([C[77] || CT.C77, C[78] || CT.C78], T._LocationL());
+    },
+    get C75() {
+      return C[75] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[76] || CT.C76,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 101,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/sections/fourth_section.dart"
+      });
+    }
+  }, false);
+  var C = Array(79).fill(void 0);
+  var I = ["package:website_video_animation/pages/home_page/sections/fourth_section.dart"];
+  fourth_section.FourthSection = class FourthSection extends framework.StatefulWidget {
+    createState() {
+      return new fourth_section._FourthSectionState.new();
+    }
+  };
+  (fourth_section.FourthSection.new = function(opts) {
+    let key = opts && 'key' in opts ? opts.key : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    fourth_section.FourthSection.__proto__.new.call(this, {key: key, $creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = fourth_section.FourthSection.prototype;
+  dart.addTypeTests(fourth_section.FourthSection);
+  dart.addTypeCaches(fourth_section.FourthSection);
+  dart.setMethodSignature(fourth_section.FourthSection, () => ({
+    __proto__: dart.getMethods(fourth_section.FourthSection.__proto__),
+    createState: dart.fnType(dart.legacy(fourth_section._FourthSectionState), [])
+  }));
+  dart.setLibraryUri(fourth_section.FourthSection, I[0]);
+  var EdgeInsets_bottom = dart.privateName(edge_insets, "EdgeInsets.bottom");
+  var EdgeInsets_right = dart.privateName(edge_insets, "EdgeInsets.right");
+  var EdgeInsets_top = dart.privateName(edge_insets, "EdgeInsets.top");
+  var EdgeInsets_left = dart.privateName(edge_insets, "EdgeInsets.left");
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  fourth_section._FourthSectionState = class _FourthSectionState extends framework.State$(dart.legacy(fourth_section.FourthSection)) {
+    initState() {
+      super.initState();
+    }
+    build(context) {
+      return new basic.Padding.new({padding: C[0] || CT.C0, child: new basic.Column.new({mainAxisAlignment: flex.MainAxisAlignment.spaceEvenly, children: T.JSArrayOfWidgetL().of([new bordered_text.BorderedText.new("PORTFOLIO", {$creationLocationd_0dea112b090073317d4: C[1] || CT.C1}), new fourth_section.PortfolioContent.new({$creationLocationd_0dea112b090073317d4: C[4] || CT.C4})]), $creationLocationd_0dea112b090073317d4: C[6] || CT.C6}), $creationLocationd_0dea112b090073317d4: C[10] || CT.C10});
+    }
+  };
+  (fourth_section._FourthSectionState.new = function() {
+    this.onScroll = false;
+    fourth_section._FourthSectionState.__proto__.new.call(this);
+    ;
+  }).prototype = fourth_section._FourthSectionState.prototype;
+  dart.addTypeTests(fourth_section._FourthSectionState);
+  dart.addTypeCaches(fourth_section._FourthSectionState);
+  dart.setMethodSignature(fourth_section._FourthSectionState, () => ({
+    __proto__: dart.getMethods(fourth_section._FourthSectionState.__proto__),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setLibraryUri(fourth_section._FourthSectionState, I[0]);
+  dart.setFieldSignature(fourth_section._FourthSectionState, () => ({
+    __proto__: dart.getFields(fourth_section._FourthSectionState.__proto__),
+    onScroll: dart.fieldType(dart.legacy(core.bool))
+  }));
+  fourth_section.PortfolioContent = class PortfolioContent extends framework.StatelessWidget {
+    build(context) {
+      return new container.Container.new({width: 1000.0, height: 500.0, child: new layout_grid.LayoutGrid.new({rowGap: 1.0, columnGap: 1.0, areas: "                  img6 img5 img4\n                  img3 img2 img1\n                  ", columnSizes: T.JSArrayOfTrackSizeL().of([helpers['TrackUnitsNumExtension|get#fr'](1), helpers['TrackUnitsNumExtension|get#fr'](1), helpers['TrackUnitsNumExtension|get#fr'](1)]), rowSizes: T.JSArrayOfTrackSizeL().of([helpers['TrackUnitsNumExtension|get#fr'](1), helpers['TrackUnitsNumExtension|get#fr'](1)]), children: T.JSArrayOfWidgetL().of([new placement.NamedAreaGridPlacement.new({areaName: "img6", child: new fourth_section.PortoflioItem.new({imageName: "images/img6.png", $creationLocationd_0dea112b090073317d4: C[14] || CT.C14}), $creationLocationd_0dea112b090073317d4: C[17] || CT.C17}), new placement.NamedAreaGridPlacement.new({areaName: "img5", child: new fourth_section.PortoflioItem.new({imageName: "images/img5.png", $creationLocationd_0dea112b090073317d4: C[21] || CT.C21}), $creationLocationd_0dea112b090073317d4: C[24] || CT.C24}), new placement.NamedAreaGridPlacement.new({areaName: "img4", child: new fourth_section.PortoflioItem.new({imageName: "images/img4.png", $creationLocationd_0dea112b090073317d4: C[28] || CT.C28}), $creationLocationd_0dea112b090073317d4: C[31] || CT.C31}), new placement.NamedAreaGridPlacement.new({areaName: "img3", child: new fourth_section.PortoflioItem.new({imageName: "images/img3.png", $creationLocationd_0dea112b090073317d4: C[35] || CT.C35}), $creationLocationd_0dea112b090073317d4: C[38] || CT.C38}), new placement.NamedAreaGridPlacement.new({areaName: "img2", child: new fourth_section.PortoflioItem.new({imageName: "images/img2.png", $creationLocationd_0dea112b090073317d4: C[42] || CT.C42}), $creationLocationd_0dea112b090073317d4: C[45] || CT.C45}), new placement.NamedAreaGridPlacement.new({areaName: "img1", child: new fourth_section.PortoflioItem.new({imageName: "images/img1.png", $creationLocationd_0dea112b090073317d4: C[49] || CT.C49}), $creationLocationd_0dea112b090073317d4: C[52] || CT.C52})]), $creationLocationd_0dea112b090073317d4: C[56] || CT.C56}), $creationLocationd_0dea112b090073317d4: C[64] || CT.C64});
+    }
+  };
+  (fourth_section.PortfolioContent.new = function(opts) {
+    let key = opts && 'key' in opts ? opts.key : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    fourth_section.PortfolioContent.__proto__.new.call(this, {key: key, $creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = fourth_section.PortfolioContent.prototype;
+  dart.addTypeTests(fourth_section.PortfolioContent);
+  dart.addTypeCaches(fourth_section.PortfolioContent);
+  dart.setMethodSignature(fourth_section.PortfolioContent, () => ({
+    __proto__: dart.getMethods(fourth_section.PortfolioContent.__proto__),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setLibraryUri(fourth_section.PortfolioContent, I[0]);
+  var imageName$ = dart.privateName(fourth_section, "PortoflioItem.imageName");
+  fourth_section.PortoflioItem = class PortoflioItem extends framework.StatelessWidget {
+    get imageName() {
+      return this[imageName$];
+    }
+    set imageName(value) {
+      super.imageName = value;
+    }
+    build(context) {
+      return new basic.Padding.new({padding: C[69] || CT.C69, child: new image.Image.asset(core.String.as(this.imageName), {fit: box_fit.BoxFit.scaleDown, height: 200.0, $creationLocationd_0dea112b090073317d4: C[70] || CT.C70}), $creationLocationd_0dea112b090073317d4: C[75] || CT.C75});
+    }
+  };
+  (fourth_section.PortoflioItem.new = function(opts) {
+    let key = opts && 'key' in opts ? opts.key : null;
+    let imageName = opts && 'imageName' in opts ? opts.imageName : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[imageName$] = imageName;
+    fourth_section.PortoflioItem.__proto__.new.call(this, {key: key, $creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = fourth_section.PortoflioItem.prototype;
+  dart.addTypeTests(fourth_section.PortoflioItem);
+  dart.addTypeCaches(fourth_section.PortoflioItem);
+  dart.setMethodSignature(fourth_section.PortoflioItem, () => ({
+    __proto__: dart.getMethods(fourth_section.PortoflioItem.__proto__),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setLibraryUri(fourth_section.PortoflioItem, I[0]);
+  dart.setFieldSignature(fourth_section.PortoflioItem, () => ({
+    __proto__: dart.getFields(fourth_section.PortoflioItem.__proto__),
+    imageName: dart.finalFieldType(dart.dynamic)
+  }));
+  dart.trackLibraries("packages/website_video_animation/pages/home_page/sections/fourth_section.dart", {
+    "package:website_video_animation/pages/home_page/sections/fourth_section.dart": fourth_section
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["fourth_section.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAQuC;IAAqB;;;QAHjC;;AAAQ,gEAAW,GAAG;;EAAC;;;;;;;;;;;;;;;;;;;AAU7B,MAAX;IACR;UAG0B;AACxB,YAAO,uDAEE,yCACgC,8CAC3B,yBACR,mCAAa,uEACb;IAIR;;;IAlBK,gBAAW;;;EAmBlB;;;;;;;;;;;;;UAM4B;AACxB,YAAO,qCACE,gBACC,cACD,wCACG,gBACG,YACJ,uGAIM,4BAAG,yCAAF,IAAQ,yCAAF,IAAQ,yCAAF,gBAChB,4BAAG,yCAAF,IAAQ,yCAAF,gBACP,yBACR,oDACY,eACH,iDACM,yIAGf,oDACY,eACH,iDACM,yIAGf,oDACY,eACH,iDACM,yIAGf,oDACY,eACH,iDACM,yIAGf,oDACY,eACH,iDACM,yIAGf,oDACY,eACH,iDACM;IAMvB;;;QAxD4B;;AAAQ,mEAAW,GAAG;;EAAC;;;;;;;;;;IA4D7C;;;;;;UAKoB;AACxB,YAAO,yDAEQ,qCACX,uBACY,kCACJ;IAGd;;;QAZyB;QAAU;;;AAAc,gEAAW,GAAG;;EAAC","file":"../../../../../../../../../../packages/website_video_animation/pages/home_page/sections/fourth_section.dart.lib.js"}');
+  // Exports:
+  return {
+    pages__home_page__sections__fourth_section: fourth_section
+  };
+}));
+
+//# sourceMappingURL=fourth_section.dart.lib.js.map

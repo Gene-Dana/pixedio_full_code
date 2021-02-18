@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:website_video_animation/helper_functions/helper_functions.dart';
 
 class ThirdSection extends StatelessWidget {
   const ThirdSection({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final size = getContextSize(context);
     return Container(
-      height: MediaQuery.of(context).size.height,
-      width: MediaQuery.of(context).size.width,
+      height: size.height,
+      width: size.width,
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 150.0),
+        padding:
+            EdgeInsets.symmetric(horizontal: size.width <= 500 ? 10 : 150.0),
         child: Container(
           width: 500,
           alignment: Alignment.topLeft,
@@ -23,7 +26,9 @@ class ThirdSection extends StatelessWidget {
               ),
               Text(
                 'TARGET',
-                style: TextStyle(fontSize: 70.0, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                    fontSize: sectionTextSize(size.width),
+                    fontWeight: FontWeight.bold),
               ),
               SizedBox(
                 height: 35.0,

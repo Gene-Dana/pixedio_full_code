@@ -1,8 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:website_video_animation/components/nav_button.dart';
+import 'package:website_video_animation/pages/about_page/about_page.dart';
+import 'package:website_video_animation/pages/services_page/services_page.dart';
+
+import '../home_page.dart';
 
 class Footer extends StatelessWidget {
-  const Footer({Key key}) : super(key: key);
+  const Footer({
+    Key key,
+    this.contactsKey,
+    this.contactsPressed,
+  }) : super(key: key);
 
+  final GlobalKey contactsKey;
+  final VoidCallback contactsPressed;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -36,14 +47,32 @@ class Footer extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text(
-                    "About",
+                  NavButton(
+                    onPressed: () =>
+                        Navigator.pushReplacementNamed(context, AboutPage.id),
+                    text: 'About',
                   ),
-                  Text(
-                    "Services",
+                  Spacer(),
+                  NavButton(
+                    onPressed: () => Navigator.pushReplacementNamed(
+                        context, ServicesPage.id),
+                    text: 'Services',
                   ),
-                  Text(
-                    "Contact",
+                  Spacer(),
+                  NavButton(
+                    onPressed: () async {
+                      final currRoute = ModalRoute.of(context).settings.name;
+                      if (currRoute == MyHomePage.id) {
+                        contactsPressed();
+                        Scrollable.ensureVisible(contactsKey.currentContext);
+                      } else {
+                        await Navigator.pushReplacementNamed(
+                            context, MyHomePage.id);
+                        Scrollable.ensureVisible(contactsKey.currentContext);
+                        contactsPressed();
+                      }
+                    },
+                    text: 'Contact',
                   ),
                 ],
               ),
@@ -52,8 +81,8 @@ class Footer extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                ImageIcon('images/discord.png'),
-                ImageIcon('images/whatsapp.png'),
+                CustomImageIcon('images/discord.png'),
+                CustomImageIcon('images/whatsapp.png'),
               ],
             )
           ],
@@ -64,21 +93,18 @@ class Footer extends StatelessWidget {
   }
 }
 
-class ImageIcon extends StatelessWidget {
-  ImageIcon(this.imageName);
+class CustomImageIcon extends StatelessWidget {
+  CustomImageIcon(this.imageName);
   final String imageName;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 10.0, right: 10.0),
-      child: Container(
-        width: 30.0,
-        height: 30.0,
-        child: Image.asset(
-          imageName,
-          fit: BoxFit.scaleDown,
-        ),
+      padding: const EdgeInsets.only(right: 20.0),
+      child: Image.asset(
+        imageName,
+        fit: BoxFit.scaleDown,
+        height: 30,
       ),
     );
   }

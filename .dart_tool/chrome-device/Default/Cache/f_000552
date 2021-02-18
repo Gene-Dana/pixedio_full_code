@@ -1,0 +1,556 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/video_player/video_player.dart', 'packages/chewie/src/material_controls.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/widgets/implicit_animations.dart', 'packages/flutter/src/animation/curves.dart', 'packages/flutter/src/gestures/events.dart', 'packages/flutter/src/widgets/single_child_scroll_view.dart', 'packages/website_video_animation/pages/home_page/sections/first_section.dart', 'packages/website_video_animation/pages/home_page/sections/second_section.dart', 'packages/website_video_animation/pages/home_page/sections/third_section.dart', 'packages/website_video_animation/pages/home_page/sections/fourth_section.dart', 'packages/website_video_animation/pages/home_page/sections/contact_section.dart', 'packages/website_video_animation/pages/home_page/sections/footer.dart'], (function load__packages__website_video_animation__pages__home_page__home_page_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__video_player__video_player$46dart, packages__chewie__src__material_controls$46dart, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__widgets__implicit_animations$46dart, packages__flutter__src__animation__curves$46dart, packages__flutter__src__gestures__events$46dart, packages__flutter__src__widgets__single_child_scroll_view$46dart, packages__website_video_animation__pages__home_page__sections__first_section$46dart, packages__website_video_animation__pages__home_page__sections__second_section$46dart, packages__website_video_animation__pages__home_page__sections__third_section$46dart, packages__website_video_animation__pages__home_page__sections__fourth_section$46dart, packages__website_video_animation__pages__home_page__sections__contact_section$46dart, packages__website_video_animation__pages__home_page__sections__footer$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const async = dart_sdk.async;
+  const _interceptors = dart_sdk._interceptors;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const scroll_controller = packages__flutter__src__widgets__widget_span$46dart.src__widgets__scroll_controller;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const media_query = packages__flutter__src__widgets__widget_span$46dart.src__widgets__media_query;
+  const scroll_physics = packages__flutter__src__widgets__widget_span$46dart.src__widgets__scroll_physics;
+  const video_player = packages__video_player__video_player$46dart.video_player;
+  const chewie_player = packages__chewie__src__material_controls$46dart.src__chewie_player;
+  const scaffold = packages__flutter__src__material__icon_button$46dart.src__material__scaffold;
+  const implicit_animations = packages__flutter__src__widgets__implicit_animations$46dart.src__widgets__implicit_animations;
+  const curves = packages__flutter__src__animation__curves$46dart.src__animation__curves;
+  const events = packages__flutter__src__gestures__events$46dart.src__gestures__events;
+  const single_child_scroll_view = packages__flutter__src__widgets__single_child_scroll_view$46dart.src__widgets__single_child_scroll_view;
+  const first_section = packages__website_video_animation__pages__home_page__sections__first_section$46dart.pages__home_page__sections__first_section;
+  const second_section = packages__website_video_animation__pages__home_page__sections__second_section$46dart.pages__home_page__sections__second_section;
+  const third_section = packages__website_video_animation__pages__home_page__sections__third_section$46dart.pages__home_page__sections__third_section;
+  const fourth_section = packages__website_video_animation__pages__home_page__sections__fourth_section$46dart.pages__home_page__sections__fourth_section;
+  const contact_section = packages__website_video_animation__pages__home_page__sections__contact_section$46dart.pages__home_page__sections__contact_section;
+  const footer = packages__website_video_animation__pages__home_page__sections__footer$46dart.pages__home_page__sections__footer;
+  var home_page = Object.create(dart.library);
+  var $isNegative = dartx.isNegative;
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    VoidToNull: () => (T.VoidToNull = dart.constFn(dart.fnType(core.Null, [])))(),
+    _LocationL: () => (T._LocationL = dart.constFn(dart.legacy(widget_inspector._Location)))(),
+    PointerScrollEventL: () => (T.PointerScrollEventL = dart.constFn(dart.legacy(events.PointerScrollEvent)))(),
+    FutureOfNull: () => (T.FutureOfNull = dart.constFn(async.Future$(core.Null)))(),
+    PointerSignalEventL: () => (T.PointerSignalEventL = dart.constFn(dart.legacy(events.PointerSignalEvent)))(),
+    PointerSignalEventLToNull: () => (T.PointerSignalEventLToNull = dart.constFn(dart.fnType(core.Null, [T.PointerSignalEventL()])))(),
+    WidgetL: () => (T.WidgetL = dart.constFn(dart.legacy(framework.Widget)))(),
+    JSArrayOfWidgetL: () => (T.JSArrayOfWidgetL = dart.constFn(_interceptors.JSArray$(T.WidgetL())))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "controller",
+        [_Location_column]: 23,
+        [_Location_line]: 66,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2], T._LocationL());
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 21,
+        [_Location_line]: 65,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/home_page.dart"
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 25,
+        [_Location_line]: 70,
+        [_Location_file]: null
+      });
+    },
+    get C4() {
+      return C[4] = dart.constList([C[5] || CT.C5], T._LocationL());
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[4] || CT.C4,
+        [_Location_name]: null,
+        [_Location_column]: 30,
+        [_Location_line]: 69,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/home_page.dart"
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 23,
+        [_Location_line]: 69,
+        [_Location_file]: null
+      });
+    },
+    get C7() {
+      return C[7] = dart.constList([C[8] || CT.C8], T._LocationL());
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[7] || CT.C7,
+        [_Location_name]: null,
+        [_Location_column]: 21,
+        [_Location_line]: 68,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/home_page.dart"
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 63,
+        [_Location_file]: null
+      });
+    },
+    get C10() {
+      return C[10] = dart.constList([C[11] || CT.C11], T._LocationL());
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[10] || CT.C10,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 62,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/home_page.dart"
+      });
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "duration",
+        [_Location_column]: 13,
+        [_Location_line]: 59,
+        [_Location_file]: null
+      });
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "curve",
+        [_Location_column]: 13,
+        [_Location_line]: 60,
+        [_Location_file]: null
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "opacity",
+        [_Location_column]: 13,
+        [_Location_line]: 61,
+        [_Location_file]: null
+      });
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 13,
+        [_Location_line]: 62,
+        [_Location_file]: null
+      });
+    },
+    get C13() {
+      return C[13] = dart.constList([C[14] || CT.C14, C[15] || CT.C15, C[16] || CT.C16, C[17] || CT.C17], T._LocationL());
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[13] || CT.C13,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 58,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/home_page.dart"
+      });
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: core.Duration.prototype,
+        [Duration__duration]: 4500000
+      });
+    },
+    get C20() {
+      return C[20] = dart.constList([], T._LocationL());
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[20] || CT.C20,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 166,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/home_page.dart"
+      });
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[20] || CT.C20,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 167,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/home_page.dart"
+      });
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[20] || CT.C20,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 168,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/home_page.dart"
+      });
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[20] || CT.C20,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 169,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/home_page.dart"
+      });
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[20] || CT.C20,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 170,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/home_page.dart"
+      });
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[20] || CT.C20,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 171,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/home_page.dart"
+      });
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 17,
+        [_Location_line]: 165,
+        [_Location_file]: null
+      });
+    },
+    get C27() {
+      return C[27] = dart.constList([C[28] || CT.C28], T._LocationL());
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[27] || CT.C27,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 164,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/home_page.dart"
+      });
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "controller",
+        [_Location_column]: 15,
+        [_Location_line]: 162,
+        [_Location_file]: null
+      });
+    },
+    get C32() {
+      return C[32] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "physics",
+        [_Location_column]: 15,
+        [_Location_line]: 163,
+        [_Location_file]: null
+      });
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 164,
+        [_Location_file]: null
+      });
+    },
+    get C30() {
+      return C[30] = dart.constList([C[31] || CT.C31, C[32] || CT.C32, C[33] || CT.C33], T._LocationL());
+    },
+    get C29() {
+      return C[29] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[30] || CT.C30,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 161,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/home_page.dart"
+      });
+    },
+    get C36() {
+      return C[36] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPointerSignal",
+        [_Location_column]: 13,
+        [_Location_line]: 76,
+        [_Location_file]: null
+      });
+    },
+    get C37() {
+      return C[37] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 13,
+        [_Location_line]: 161,
+        [_Location_file]: null
+      });
+    },
+    get C35() {
+      return C[35] = dart.constList([C[36] || CT.C36, C[37] || CT.C37], T._LocationL());
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[35] || CT.C35,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 75,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/home_page.dart"
+      });
+    },
+    get C40() {
+      return C[40] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 9,
+        [_Location_line]: 57,
+        [_Location_file]: null
+      });
+    },
+    get C39() {
+      return C[39] = dart.constList([C[40] || CT.C40], T._LocationL());
+    },
+    get C38() {
+      return C[38] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[39] || CT.C39,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 56,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/home_page.dart"
+      });
+    },
+    get C43() {
+      return C[43] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "body",
+        [_Location_column]: 7,
+        [_Location_line]: 56,
+        [_Location_file]: null
+      });
+    },
+    get C42() {
+      return C[42] = dart.constList([C[43] || CT.C43], T._LocationL());
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[42] || CT.C42,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 55,
+        [_Location_file]: "file:///C:/Users/rapha/Documents/Software_Development/Web%20Development/test/lib/pages/home_page/home_page.dart"
+      });
+    }
+  }, false);
+  var C = Array(44).fill(void 0);
+  var I = ["package:website_video_animation/pages/home_page/home_page.dart"];
+  home_page.MyHomePage = class MyHomePage extends framework.StatefulWidget {
+    createState() {
+      return new home_page._MyHomePageState.new();
+    }
+  };
+  (home_page.MyHomePage.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    home_page.MyHomePage.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = home_page.MyHomePage.prototype;
+  dart.addTypeTests(home_page.MyHomePage);
+  dart.addTypeCaches(home_page.MyHomePage);
+  dart.setMethodSignature(home_page.MyHomePage, () => ({
+    __proto__: dart.getMethods(home_page.MyHomePage.__proto__),
+    createState: dart.fnType(dart.legacy(home_page._MyHomePageState), [])
+  }));
+  dart.setLibraryUri(home_page.MyHomePage, I[0]);
+  var _controller = dart.privateName(home_page, "_controller");
+  var _videoPlayerController = dart.privateName(home_page, "_videoPlayerController");
+  var _chewieController = dart.privateName(home_page, "_chewieController");
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  var Duration__duration = dart.privateName(core, "Duration._duration");
+  home_page._MyHomePageState = class _MyHomePageState extends framework.State$(dart.legacy(home_page.MyHomePage)) {
+    initializeVideoPlayer() {
+      return async.async(dart.void, (function* initializeVideoPlayer() {
+        this[_videoPlayerController] = new video_player.VideoPlayerController.asset("web/assets/ball_vid.mp4");
+        yield this[_videoPlayerController].initialize();
+        this[_chewieController] = new chewie_player.ChewieController.new({videoPlayerController: this[_videoPlayerController], autoPlay: false, looping: false, showControls: false, startAt: new core.Duration.new({seconds: 0})});
+        this[_chewieController].setVolume(0.0);
+        this.setState(dart.fn(() => {
+        }, T.VoidToNull()));
+      }).bind(this));
+    }
+    initState() {
+      this.initializeVideoPlayer();
+      super.initState();
+    }
+    build(context) {
+      return new scaffold.Scaffold.new({body: new basic.Stack.new({children: T.JSArrayOfWidgetL().of([new implicit_animations.AnimatedOpacity.new({duration: new core.Duration.new({milliseconds: 3000}), curve: curves.Curves.linear, opacity: dart.notNull(this.pageNumber) >= 3 ? 0.0 : 1.0, child: new basic.FittedBox.new({child: this[_chewieController] != null && dart.test(this[_chewieController].videoPlayerController.value.initialized) ? new chewie_player.Chewie.new({controller: this[_chewieController], $creationLocationd_0dea112b090073317d4: C[0] || CT.C0}) : new container.Container.new({child: new text.Text.new("Loading", {$creationLocationd_0dea112b090073317d4: C[3] || CT.C3}), $creationLocationd_0dea112b090073317d4: C[6] || CT.C6}), $creationLocationd_0dea112b090073317d4: C[9] || CT.C9}), $creationLocationd_0dea112b090073317d4: C[12] || CT.C12}), new basic.Listener.new({onPointerSignal: dart.fn(event => {
+                if (T.PointerScrollEventL().is(event)) {
+                  if (this.clickDelay === true) {
+                    return;
+                  } else {
+                    this.clickDelay = true;
+                    T.FutureOfNull().delayed(C[18] || CT.C18, dart.fn(() => {
+                      this.clickDelay = false;
+                    }, T.VoidToNull()));
+                    if (event.scrollDelta.dy[$isNegative]) {
+                      this[_chewieController].pause();
+                      if (this.pageNumber === 1) {
+                        this[_chewieController].seekTo(new core.Duration.new({seconds: 0}));
+                      } else if (this.pageNumber === 2) {
+                        this[_chewieController].seekTo(new core.Duration.new({seconds: 4}));
+                      }
+                      if (this.pageNumber === 5) {
+                        this.setState(dart.fn(() => {
+                          this[_controller].animateTo(dart.notNull(this[_controller].position.extentBefore) - 300, {duration: new core.Duration.new({milliseconds: 2250}), curve: curves.Curves.linear});
+                        }, T.VoidToNull()));
+                      } else {
+                        this.setState(dart.fn(() => {
+                          this[_controller].animateTo(dart.notNull(this[_controller].position.extentBefore) - dart.notNull(media_query.MediaQuery.of(context).size.height), {duration: new core.Duration.new({milliseconds: 4500}), curve: curves.Curves.linear});
+                        }, T.VoidToNull()));
+                      }
+                      if (dart.notNull(this.pageNumber) - 1 <= 0)
+                        this.pageNumber = 0;
+                      else
+                        this.pageNumber = dart.notNull(this.pageNumber) - 1;
+                    } else {
+                      if (this.pageNumber === 5) {
+                        this.pageNumber = dart.notNull(this.pageNumber) + 1;
+                      }
+                      if (this.pageNumber === 4) {
+                        this.pageNumber = dart.notNull(this.pageNumber) + 1;
+                      }
+                      if (this.pageNumber === 3) {
+                        this.pageNumber = dart.notNull(this.pageNumber) + 1;
+                      }
+                      if (this.pageNumber === 2) {
+                        this.pageNumber = dart.notNull(this.pageNumber) + 1;
+                      }
+                      if (this.pageNumber === 0) {
+                        this.pageNumber = dart.notNull(this.pageNumber) + 1;
+                        this[_chewieController].play();
+                        T.FutureOfNull().delayed(new core.Duration.new({milliseconds: 4500}), dart.fn(() => {
+                          this[_chewieController].pause();
+                        }, T.VoidToNull()));
+                      } else if (this.pageNumber === 1) {
+                        this.pageNumber = dart.notNull(this.pageNumber) + 1;
+                        this[_chewieController].play();
+                      }
+                      core.print(this.pageNumber);
+                      this.setState(dart.fn(() => {
+                        this[_controller].animateTo(dart.notNull(this[_controller].position.extentBefore) + dart.notNull(media_query.MediaQuery.of(context).size.height), {duration: new core.Duration.new({milliseconds: 3000}), curve: curves.Curves.linear});
+                      }, T.VoidToNull()));
+                    }
+                  }
+                }
+              }, T.PointerSignalEventLToNull()), child: new single_child_scroll_view.SingleChildScrollView.new({controller: this[_controller], physics: new scroll_physics.NeverScrollableScrollPhysics.new(), child: new basic.Column.new({children: T.JSArrayOfWidgetL().of([new first_section.FirstPage.new({$creationLocationd_0dea112b090073317d4: C[19] || CT.C19}), new second_section.SecondSection.new({$creationLocationd_0dea112b090073317d4: C[21] || CT.C21}), new third_section.ThirdSection.new({$creationLocationd_0dea112b090073317d4: C[22] || CT.C22}), new fourth_section.FourthSection.new({$creationLocationd_0dea112b090073317d4: C[23] || CT.C23}), new contact_section.ContactSection.new({$creationLocationd_0dea112b090073317d4: C[24] || CT.C24}), new footer.Footer.new({$creationLocationd_0dea112b090073317d4: C[25] || CT.C25})]), $creationLocationd_0dea112b090073317d4: C[26] || CT.C26}), $creationLocationd_0dea112b090073317d4: C[29] || CT.C29}), $creationLocationd_0dea112b090073317d4: C[34] || CT.C34})]), $creationLocationd_0dea112b090073317d4: C[38] || CT.C38}), $creationLocationd_0dea112b090073317d4: C[41] || CT.C41});
+    }
+  };
+  (home_page._MyHomePageState.new = function() {
+    this.clickDelay = false;
+    this.pageNumber = 0;
+    this[_controller] = new scroll_controller.ScrollController.new();
+    this[_videoPlayerController] = null;
+    this[_chewieController] = null;
+    home_page._MyHomePageState.__proto__.new.call(this);
+    ;
+  }).prototype = home_page._MyHomePageState.prototype;
+  dart.addTypeTests(home_page._MyHomePageState);
+  dart.addTypeCaches(home_page._MyHomePageState);
+  dart.setMethodSignature(home_page._MyHomePageState, () => ({
+    __proto__: dart.getMethods(home_page._MyHomePageState.__proto__),
+    initializeVideoPlayer: dart.fnType(dart.legacy(async.Future$(dart.void)), []),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setLibraryUri(home_page._MyHomePageState, I[0]);
+  dart.setFieldSignature(home_page._MyHomePageState, () => ({
+    __proto__: dart.getFields(home_page._MyHomePageState.__proto__),
+    clickDelay: dart.fieldType(dart.legacy(core.bool)),
+    pageNumber: dart.fieldType(dart.legacy(core.int)),
+    [_controller]: dart.finalFieldType(dart.legacy(scroll_controller.ScrollController)),
+    [_videoPlayerController]: dart.fieldType(dart.legacy(video_player.VideoPlayerController)),
+    [_chewieController]: dart.fieldType(dart.legacy(chewie_player.ChewieController))
+  }));
+  dart.trackLibraries("packages/website_video_animation/pages/home_page/home_page.dart", {
+    "package:website_video_animation/pages/home_page/home_page.dart": home_page
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["home_page.dart"],"names":[],"mappings":"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","file":"../../../../../../../../../packages/website_video_animation/pages/home_page/home_page.dart.lib.js"}');
+  // Exports:
+  return {
+    pages__home_page__home_page: home_page
+  };
+}));
+
+//# sourceMappingURL=home_page.dart.lib.js.map

@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'helper_functions/helper_functions.dart';
+import 'pages/about_page/about_page.dart';
+import 'pages/services_page/services_page.dart';
 
 import 'pages/home_page/home_page.dart';
 
@@ -14,7 +17,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(),
+      initialRoute: MyHomePage.id,
+      routes: {
+        MyHomePage.id: (context) =>
+            MyHomePage(orientation: getContextOrientation(context)),
+        AboutPage.id: (context) => AboutPage(),
+        ServicesPage.id: (context) => ServicesPage(),
+      },
     );
   }
 }
