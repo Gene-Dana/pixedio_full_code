@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter/gestures.dart';
 import 'package:video_player/video_player.dart';
-import 'package:website_video_animation/components/container_designed.dart';
-import 'package:website_video_animation/components/header_nav.dart';
+import 'package:pixedio_works/components/container_designed.dart';
+import 'package:pixedio_works/components/header_nav.dart';
 
-import 'package:website_video_animation/pages/home_page/sections/portfolio_section.dart';
+import 'package:pixedio_works/pages/home_page/sections/portfolio_section.dart';
 
 import 'sections/contact_section.dart';
 import 'sections/footer.dart';
-import 'sections/first_section.dart';
+import 'sections/welcome_section.dart';
 import 'sections/second_section.dart';
 import 'sections/third_section.dart';
 
@@ -59,7 +59,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
     _controller.dispose();
     _videoPlayerController.dispose();
     super.dispose();
@@ -173,7 +172,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   showcase ? NeverScrollableScrollPhysics() : ScrollPhysics(),
               child: Column(
                 children: [
-                  FirstPage(),
+                  WelcomeSection(),
                   SecondSection(),
                   ThirdSection(),
                   PortfolioSection(),

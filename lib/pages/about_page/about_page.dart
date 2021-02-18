@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:website_video_animation/components/bordered_text.dart';
-import 'package:website_video_animation/components/container_designed.dart';
-import 'package:website_video_animation/components/header_nav.dart';
-import 'package:website_video_animation/helper_functions/helper_functions.dart';
-import 'package:website_video_animation/pages/services_page/services_page.dart';
+import 'package:pixedio_works/components/bordered_text.dart';
+import 'package:pixedio_works/components/container_designed.dart';
+import 'package:pixedio_works/components/header_nav.dart';
+import 'package:pixedio_works/helper_functions/helper_functions.dart';
 
 class AboutPage extends StatelessWidget {
   static const String id = 'about_page';

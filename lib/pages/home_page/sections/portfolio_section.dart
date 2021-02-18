@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:website_video_animation/components/bordered_text.dart';
-import 'package:website_video_animation/helper_functions/helper_functions.dart';
+import 'package:pixedio_works/components/bordered_text.dart';
+import 'package:pixedio_works/helper_functions/helper_functions.dart';
 
 class PortfolioSection extends StatefulWidget {
   const PortfolioSection({Key key}) : super(key: key);

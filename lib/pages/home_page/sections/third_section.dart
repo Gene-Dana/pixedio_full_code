@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:website_video_animation/helper_functions/helper_functions.dart';
+import 'package:pixedio_works/helper_functions/helper_functions.dart';
 
 class ThirdSection extends StatelessWidget {
   const ThirdSection({Key key}) : super(key: key);

@@ -8,9 +8,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:website_video_animation/main.dart' as app;
+import 'package:pixedio_works/main.dart' as app;
 
-void _testMain() {
+void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     app.main();

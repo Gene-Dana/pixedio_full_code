@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:website_video_animation/components/nav_button.dart';
-import 'package:website_video_animation/pages/about_page/about_page.dart';
-import 'package:website_video_animation/pages/services_page/services_page.dart';
+import 'package:pixedio_works/components/nav_button.dart';
+import 'package:pixedio_works/pages/about_page/about_page.dart';
+import 'package:pixedio_works/pages/services_page/services_page.dart';
 
 import '../home_page.dart';
 
@@ -87,7 +87,6 @@ class Footer extends StatelessWidget {
             )
           ],
         ),
-        // TODO: Your Fifth Screen goes here
       ),
     );
   }

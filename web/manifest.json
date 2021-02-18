@@ -1,6 +1,6 @@
 {
-    "name": "website_video_animation",
-    "short_name": "website_video_animation",
+    "name": "pixedio_works",
+    "short_name": "pixedio_works",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

@@ -19,15 +19,15 @@ define("main_module.bootstrap", ["web_entrypoint.dart", "dart_sdk"], function(ap
          main();
       });
     }
-    window.$dartAppId = "SiiSgM7/8fyNCgNUmm92WQ==";
+    window.$dartAppId = "KXDi4rMHz5vk7u02FFXNGA==";
 window.$dartReloadConfiguration = "ReloadConfiguration.none";
 window.$dartModuleStrategy = "require-js";
 window.$loadModuleConfig = require;
 window.$dwdsVersion = "8.0.3";
-window.$dwdsDevHandlerPath = "http://localhost:60391/$dwdsSseHandler";
+window.$dwdsDevHandlerPath = "http://localhost:64409/$dwdsSseHandler";
 window.$dartEntrypointPath = "main_module.bootstrap.js";
 window.$requireLoader.forceLoadModule("dwds/src/injected/client");
-window.$dartExtensionUri = "ws://127.0.0.1:60393/$debug";
+window.$dartExtensionUri = "ws://127.0.0.1:64411/$debug";
 
   } else {
     if(window.$dartMainExecuted){
@@ -466,32 +466,13 @@ let modulePaths = {
  "packages/website_video_animation/components/nav_button.dart": "packages/website_video_animation/components/nav_button.dart.lib",
  "packages/website_video_animation/components/container_designed.dart": "packages/website_video_animation/components/container_designed.dart.lib",
  "packages/website_video_animation/components/bordered_text.dart": "packages/website_video_animation/components/bordered_text.dart.lib",
- "packages/flutter_layout_grid/src/rendering/placement.dart": "packages/flutter_layout_grid/src/rendering/placement.dart.lib",
- "packages/flutter_layout_grid/src/rendering/track_size.dart": "packages/flutter_layout_grid/src/rendering/track_size.dart.lib",
- "packages/quiver/iterables.dart": "packages/quiver/iterables.dart.lib",
- "packages/quiver/src/iterables/zip.dart": "packages/quiver/src/iterables/zip.dart.lib",
- "packages/quiver/src/iterables/range.dart": "packages/quiver/src/iterables/range.dart.lib",
- "packages/quiver/src/iterables/partition.dart": "packages/quiver/src/iterables/partition.dart.lib",
- "packages/quiver/src/iterables/min_max.dart": "packages/quiver/src/iterables/min_max.dart.lib",
- "packages/quiver/src/iterables/merge.dart": "packages/quiver/src/iterables/merge.dart.lib",
- "packages/quiver/src/iterables/infinite_iterable.dart": "packages/quiver/src/iterables/infinite_iterable.dart.lib",
- "packages/quiver/src/iterables/generating_iterable.dart": "packages/quiver/src/iterables/generating_iterable.dart.lib",
- "packages/quiver/src/iterables/enumerate.dart": "packages/quiver/src/iterables/enumerate.dart.lib",
- "packages/quiver/src/iterables/cycle.dart": "packages/quiver/src/iterables/cycle.dart.lib",
- "packages/quiver/src/iterables/count.dart": "packages/quiver/src/iterables/count.dart.lib",
- "packages/quiver/src/iterables/concat.dart": "packages/quiver/src/iterables/concat.dart.lib",
- "packages/flutter_layout_grid/src/foundation/placement.dart": "packages/flutter_layout_grid/src/foundation/placement.dart.lib",
- "packages/quiver/core.dart": "packages/quiver/core.dart.lib",
- "packages/quiver/src/core/utils.dart": "packages/quiver/src/core/utils.dart.lib",
- "packages/quiver/src/core/optional.dart": "packages/quiver/src/core/optional.dart.lib",
- "packages/quiver/src/core/hash.dart": "packages/quiver/src/core/hash.dart.lib",
- "packages/flutter_layout_grid/src/foundation/collections.dart": "packages/flutter_layout_grid/src/foundation/collections.dart.lib",
  "packages/website_video_animation/pages/home_page/sections/portfolio_section.dart": "packages/website_video_animation/pages/home_page/sections/portfolio_section.dart.lib",
  "packages/carousel_slider/carousel_controller.dart": "packages/carousel_slider/carousel_controller.dart.lib",
  "packages/carousel_slider/carousel_options.dart": "packages/carousel_slider/carousel_options.dart.lib",
  "packages/carousel_slider/utils.dart": "packages/carousel_slider/utils.dart.lib",
  "packages/video_player/video_player.dart": "packages/video_player/video_player.dart.lib",
- "packages/video_player/src/sub_rip.dart": "packages/video_player/src/sub_rip.dart.lib"
+ "packages/video_player/src/sub_rip.dart": "packages/video_player/src/sub_rip.dart.lib",
+ "packages/avatar_glow/avatar_glow.dart": "packages/avatar_glow/avatar_glow.dart.lib"
 };
 let moduleNames = {
  "web_entrypoint.dart.lib": "web_entrypoint.dart",
@@ -880,32 +861,13 @@ let moduleNames = {
  "packages/website_video_animation/components/nav_button.dart.lib": "packages/website_video_animation/components/nav_button.dart",
  "packages/website_video_animation/components/container_designed.dart.lib": "packages/website_video_animation/components/container_designed.dart",
  "packages/website_video_animation/components/bordered_text.dart.lib": "packages/website_video_animation/components/bordered_text.dart",
- "packages/flutter_layout_grid/src/rendering/placement.dart.lib": "packages/flutter_layout_grid/src/rendering/placement.dart",
- "packages/flutter_layout_grid/src/rendering/track_size.dart.lib": "packages/flutter_layout_grid/src/rendering/track_size.dart",
- "packages/quiver/iterables.dart.lib": "packages/quiver/iterables.dart",
- "packages/quiver/src/iterables/zip.dart.lib": "packages/quiver/src/iterables/zip.dart",
- "packages/quiver/src/iterables/range.dart.lib": "packages/quiver/src/iterables/range.dart",
- "packages/quiver/src/iterables/partition.dart.lib": "packages/quiver/src/iterables/partition.dart",
- "packages/quiver/src/iterables/min_max.dart.lib": "packages/quiver/src/iterables/min_max.dart",
- "packages/quiver/src/iterables/merge.dart.lib": "packages/quiver/src/iterables/merge.dart",
- "packages/quiver/src/iterables/infinite_iterable.dart.lib": "packages/quiver/src/iterables/infinite_iterable.dart",
- "packages/quiver/src/iterables/generating_iterable.dart.lib": "packages/quiver/src/iterables/generating_iterable.dart",
- "packages/quiver/src/iterables/enumerate.dart.lib": "packages/quiver/src/iterables/enumerate.dart",
- "packages/quiver/src/iterables/cycle.dart.lib": "packages/quiver/src/iterables/cycle.dart",
- "packages/quiver/src/iterables/count.dart.lib": "packages/quiver/src/iterables/count.dart",
- "packages/quiver/src/iterables/concat.dart.lib": "packages/quiver/src/iterables/concat.dart",
- "packages/flutter_layout_grid/src/foundation/placement.dart.lib": "packages/flutter_layout_grid/src/foundation/placement.dart",
- "packages/quiver/core.dart.lib": "packages/quiver/core.dart",
- "packages/quiver/src/core/utils.dart.lib": "packages/quiver/src/core/utils.dart",
- "packages/quiver/src/core/optional.dart.lib": "packages/quiver/src/core/optional.dart",
- "packages/quiver/src/core/hash.dart.lib": "packages/quiver/src/core/hash.dart",
- "packages/flutter_layout_grid/src/foundation/collections.dart.lib": "packages/flutter_layout_grid/src/foundation/collections.dart",
  "packages/website_video_animation/pages/home_page/sections/portfolio_section.dart.lib": "packages/website_video_animation/pages/home_page/sections/portfolio_section.dart",
  "packages/carousel_slider/carousel_controller.dart.lib": "packages/carousel_slider/carousel_controller.dart",
  "packages/carousel_slider/carousel_options.dart.lib": "packages/carousel_slider/carousel_options.dart",
  "packages/carousel_slider/utils.dart.lib": "packages/carousel_slider/utils.dart",
  "packages/video_player/video_player.dart.lib": "packages/video_player/video_player.dart",
- "packages/video_player/src/sub_rip.dart.lib": "packages/video_player/src/sub_rip.dart"
+ "packages/video_player/src/sub_rip.dart.lib": "packages/video_player/src/sub_rip.dart",
+ "packages/avatar_glow/avatar_glow.dart.lib": "packages/avatar_glow/avatar_glow.dart"
 };
 if(!window.$requireLoader) {
    window.$requireLoader = {

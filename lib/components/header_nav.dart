@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:website_video_animation/helper_functions/helper_functions.dart';
-import 'package:website_video_animation/pages/about_page/about_page.dart';
-import 'package:website_video_animation/pages/home_page/home_page.dart';
-import 'package:website_video_animation/pages/services_page/services_page.dart';
+import 'package:pixedio_works/helper_functions/helper_functions.dart';
+import 'package:pixedio_works/pages/about_page/about_page.dart';
+import 'package:pixedio_works/pages/home_page/home_page.dart';
+import 'package:pixedio_works/pages/services_page/services_page.dart';
 
 import '../constants.dart';
 import 'nav_button.dart';

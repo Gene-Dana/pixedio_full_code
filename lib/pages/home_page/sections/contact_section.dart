@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:website_video_animation/constants.dart';
-import 'package:website_video_animation/helper_functions/helper_functions.dart';
+import 'package:pixedio_works/constants.dart';
+import 'package:pixedio_works/helper_functions/helper_functions.dart';
 import 'footer.dart';
 
 class ContactSection extends StatelessWidget {
