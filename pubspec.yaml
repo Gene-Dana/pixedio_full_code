@@ -1,0 +1,44 @@
+name: website_video_animation
+description: A new Flutter application.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.1
+
+  chewie: ^0.12.2
+  video_player: ^1.0.1
+  flutter_layout_grid: ^1.0.0-nullsafety.0
+  visibility_detector: ^0.1.5
+
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - web/assets/
+    - web/assets/fonts/
+    - web/assets/images/
+    - web/assets/ball_vid.mp4
+
+  fonts:
+    - family: galderglynn_titling_rg
+      fonts:
+        - asset: web/assets/fonts/galderglynn_titling_rg.ttf
+    - family: Cervanttis
+      fonts:
+        - asset: web/assets/fonts/Cervanttis.ttf
