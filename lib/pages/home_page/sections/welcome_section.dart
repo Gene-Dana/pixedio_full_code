@@ -7,9 +7,10 @@ class WelcomeSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
+
     return Container(
-      height: MediaQuery.of(context).size.height,
-      width: MediaQuery.of(context).size.width,
+      height: size.height,
+      width: size.width,
       child: Padding(
         padding: EdgeInsets.symmetric(
           horizontal: size.width <= 620 ? 10 : 100.0,
