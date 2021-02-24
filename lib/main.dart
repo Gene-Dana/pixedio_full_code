@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:pixedio_works/pages/contacts_page/contacts_page.dart';
+import 'package:pixedio_works/pages/portfolio_page/portfolio_page.dart';
 import 'helper_functions/helper_functions.dart';
 import 'pages/about_page/about_page.dart';
 import 'pages/services_page/services_page.dart';
@@ -23,6 +25,8 @@ class MyApp extends StatelessWidget {
             MyHomePage(orientation: getContextOrientation(context)),
         AboutPage.id: (context) => AboutPage(),
         ServicesPage.id: (context) => ServicesPage(),
+        PortfolioPage.id: (context) => PortfolioPage(),
+        ContactPage.id: (context) => ContactPage(),
       },
     );
   }

@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:pixedio_works/components/nav_button.dart';
+import 'package:pixedio_works/helper_functions/helper_functions.dart';
 import 'package:pixedio_works/pages/about_page/about_page.dart';
+import 'package:pixedio_works/pages/contacts_page/contacts_page.dart';
+import 'package:pixedio_works/pages/portfolio_page/portfolio_page.dart';
 import 'package:pixedio_works/pages/services_page/services_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
+import '../../../constants.dart';
 import '../home_page.dart';
 
 class Footer extends StatelessWidget {
@@ -34,9 +39,14 @@ class Footer extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
-              'Pixedio',
-              style: TextStyle(fontFamily: 'Cervanttis', fontSize: 32.0),
+            TextButton(
+              style: kTextButtonStyle,
+              onPressed: () =>
+                  Navigator.pushReplacementNamed(context, MyHomePage.id),
+              child: Text(
+                'Pixedio',
+                style: TextStyle(fontFamily: 'Cervanttis', fontSize: 32.0),
+              ),
             ),
             Text(
               "Copyright © 2020. Pixedio. All rights reserved.",
@@ -55,23 +65,19 @@ class Footer extends StatelessWidget {
                   Spacer(),
                   NavButton(
                     onPressed: () => Navigator.pushReplacementNamed(
+                        context, PortfolioPage.id),
+                    text: 'Portfolio',
+                  ),
+                  Spacer(),
+                  NavButton(
+                    onPressed: () => Navigator.pushReplacementNamed(
                         context, ServicesPage.id),
                     text: 'Services',
                   ),
                   Spacer(),
                   NavButton(
-                    onPressed: () async {
-                      final currRoute = ModalRoute.of(context).settings.name;
-                      if (currRoute == MyHomePage.id) {
-                        contactsPressed();
-                        Scrollable.ensureVisible(contactsKey.currentContext);
-                      } else {
-                        await Navigator.pushReplacementNamed(
-                            context, MyHomePage.id);
-                        Scrollable.ensureVisible(contactsKey.currentContext);
-                        contactsPressed();
-                      }
-                    },
+                    onPressed: () =>
+                        Navigator.pushReplacementNamed(context, ContactPage.id),
                     text: 'Contact',
                   ),
                 ],
@@ -81,10 +87,16 @@ class Footer extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                CustomImageIcon('images/discord.png'),
-                CustomImageIcon('images/whatsapp.png'),
+                TextButton(
+                    style: kTextButtonStyle,
+                    onPressed: () => redirectDiscord(),
+                    child: CustomImageIcon('images/discord.png')),
+                TextButton(
+                    style: kTextButtonStyle,
+                    onPressed: () => null,
+                    child: CustomImageIcon('images/whatsapp.png')),
               ],
-            )
+            ),
           ],
         ),
       ),

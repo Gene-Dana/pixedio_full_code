@@ -10,15 +10,17 @@ class SecondSection extends StatelessWidget {
     return Container(
       height: size.height,
       width: size.width,
+      alignment: Alignment.centerRight,
       child: Padding(
         padding: EdgeInsets.only(
             left: size.width <= 1000 ? 10 : 250.0,
             right: size.width <= 1000 ? 10 : 250.0,
-            top: 100.0),
+            top: size.width <= 1000 ? 0 : 100.0),
         child: Column(
+          mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: size.width <= 780
               ? CrossAxisAlignment.center
-              : CrossAxisAlignment.end,
+              : CrossAxisAlignment.center,
           mainAxisAlignment: size.width <= 1000
               ? MainAxisAlignment.start
               : MainAxisAlignment.center,
@@ -37,6 +39,11 @@ class SecondSection extends StatelessWidget {
               'Designs that envoke the user\'s emotions and keeps them \nengaged',
               style: TextStyle(fontSize: bodyFontSize(size.width), height: 1.6),
             ),
+            size.width <= 1000
+                ? SizedBox(
+                    height: 100,
+                  )
+                : SizedBox.shrink(),
           ],
         ),
       ),

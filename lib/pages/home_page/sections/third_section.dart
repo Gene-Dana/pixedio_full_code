@@ -12,17 +12,16 @@ class ThirdSection extends StatelessWidget {
       width: size.width,
       child: Padding(
         padding:
-            EdgeInsets.symmetric(horizontal: size.width <= 500 ? 10 : 150.0),
+            EdgeInsets.symmetric(horizontal: size.width <= 500 ? 10 : 100.0),
         child: Container(
           width: 500,
           alignment: Alignment.topLeft,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: [
               SizedBox(
-                height: 100.0,
+                height: 200,
               ),
               Text(
                 'TARGET',
@@ -37,6 +36,11 @@ class ThirdSection extends StatelessWidget {
                 'Target your users with dynamic designs that represent your\nbrand',
                 style: TextStyle(fontSize: 16.0, height: 1.6),
               ),
+              size.width <= 1000
+                  ? SizedBox(
+                      height: 100,
+                    )
+                  : SizedBox.shrink(),
             ],
           ),
         ),

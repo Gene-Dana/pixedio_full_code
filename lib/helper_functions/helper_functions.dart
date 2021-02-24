@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../constants.dart';
 
@@ -22,6 +23,15 @@ double headingTextSize(width) {
     fontsize = 18;
   }
   return fontsize;
+}
+
+redirectDiscord() async {
+  const url = 'https://discord.gg/W9jGNP4JvS';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
 }
 
 double bodyFontSize(width) {

@@ -3,6 +3,8 @@ import 'package:pixedio_works/components/bordered_text.dart';
 import 'package:pixedio_works/components/container_designed.dart';
 import 'package:pixedio_works/components/header_nav.dart';
 import 'package:pixedio_works/helper_functions/helper_functions.dart';
+import 'package:pixedio_works/pages/contacts_page/contacts_page.dart';
+import 'package:pixedio_works/pages/home_page/sections/footer.dart';
 
 Text headTextStyle(text, size) {
   return Text(
@@ -77,10 +79,16 @@ class ServicesPage extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          ContainerDesigned(
-            height: size.height,
-            width: size.width,
-            child: changeLayout ? _mobileLayout() : _desktopLayout(),
+          SingleChildScrollView(
+            child: Column(children: [
+              SizedBox(height: 15.0),
+              ContainerDesigned(
+                height: size.height,
+                width: size.width,
+                child: changeLayout ? _mobileLayout() : _desktopLayout(),
+              ),
+              Footer(),
+            ]),
           ),
           HeaderNav(),
         ],
@@ -195,7 +203,7 @@ class ServiceItem extends StatelessWidget {
           contentTextStyle(contentText, size),
           SizedBox(height: 25),
           startButton('GET STARTED',
-              onPressed: onPressed,
+              onPressed: () => Navigator.pushNamed(context, ContactPage.id),
               style: TextStyle(
                 fontSize: size.width < 420 ? 10.0 : 14.0,
                 fontWeight: FontWeight.w700,
