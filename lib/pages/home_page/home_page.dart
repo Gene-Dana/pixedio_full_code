@@ -78,6 +78,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
+    var height = size.height;
+    var width = size.width;
     return Scaffold(
       body: Stack(
         children: [
@@ -116,7 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
               opacity: showcase ? 0 : 1,
               child: ContainerDesigned()),
           _getMyListener(
-            size: MediaQuery.of(context).size,
+            size: size,
             child: SingleChildScrollView(
               controller: _controller,
               physics:
@@ -133,39 +136,32 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           !hideHint
               ? Positioned(
-                  right: MediaQuery.of(context).size.width / 20,
-                  bottom: MediaQuery.of(context).size.height / 16,
+                  right: width / 20,
+                  bottom: height / 16,
                   child: Column(
                     children: [
                       AvatarGlow(
                         repeatPauseDuration: Duration(milliseconds: 1500),
                         duration: Duration(milliseconds: 750),
-                        endRadius: MediaQuery.of(context).size.width <= 800
-                            ? 50
-                            : 80.0,
+                        endRadius: width <= 800 ? 50 : 80.0,
                         glowColor: Colors.grey,
                         child: Container(
-                          child: MediaQuery.of(context).size.width <= 1024
+                          child: width <= 1024
                               ? Icon(
                                   Icons.expand_less,
                                 )
                               : Image.asset(
                                   'web/assets/images/Scroll.png',
-                                  height:
-                                      MediaQuery.of(context).size.width <= 800
-                                          ? 45
-                                          : 75.0,
+                                  height: width <= 800 ? 45 : 75.0,
                                 ),
                         ),
                       ),
                       Text(
-                        MediaQuery.of(context).size.width <= 1024
+                        width <= 1024
                             ? 'Swipe Up to Animate'
                             : 'Scroll Down to animate',
                         style: TextStyle(
-                            fontSize: MediaQuery.of(context).size.width <= 800
-                                ? 8
-                                : 12,
+                            fontSize: width <= 800 ? 8 : 12,
                             fontFamily: 'Poppins',
                             fontWeight: FontWeight.w400),
                       ),
